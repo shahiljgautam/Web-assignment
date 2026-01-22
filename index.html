@@ -1,0 +1,273 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>University Campus Portal</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet"
+          href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+</head>
+
+<body>
+
+<header id="top">
+    <nav class="navbar">
+        <div class="logo-container">
+            <a href="https://kbcampus.edu.np/" target="_blank" rel="noopener noreferrer">
+                <img src="kbc_logo.png" 
+                     alt="Kathmandu Business Campus logo"
+                     class="logo-img">
+            </a>
+            
+        </div>
+
+        <input type="checkbox" id="menu-toggle">
+        <label for="menu-toggle" class="menu-icon">☰</label>
+
+        <ul class="nav-links">
+            <li><a href="#top">Home</a></li>
+            <li><a href="#resume">Student Resume</a></li>
+            <li><a href="#registration">Student Registration</a></li>
+            <li><a href="#map">Campus Map</a></li>
+            <li><a href="#footer">About Us</a></li>
+        </ul>
+    </nav>
+</header>
+
+
+<main>
+
+<!-- ================= Resume Section ================= -->
+<section id="resume" class="section">
+    <h2>Student Resume</h2>
+
+    <article class="resume-card resume-grid">
+
+        <!-- LEFT COLUMN -->
+<div class="resume-left">
+    <img src="IMG_7659.jpg" alt="Shahil Jung Gautam – BCA Student">
+
+    <h3>Shahil Jung Gautam</h3>
+    <p class="major">Bachelor of Computer Application (BCA)</p>
+
+    <div class="resume-info">
+        <p><strong>Email:</strong> <a href="mailto:sjgshahil@gmail.com">sjgshahil@gmail.com</a></p>
+        <p><strong>Phone:</strong> <a href="tel:+9779840277385">+977-9840277385</a></p>
+        <p><strong>Address:</strong> Kathmandu, Nepal</p>
+        <p><strong>Course:</strong> BCA</p>
+        <p><strong>Semester:</strong> 3rd</p>
+    </div>
+
+    <!-- Social Media Buttons -->
+    <div class="social-links-resume">
+    <a href="https://www.facebook.com/" target="_blank" aria-label="Facebook">
+        <i class="fab fa-facebook"></i>
+        <span class="social-label">Facebook</span>
+    </a>
+    <a href="https://www.instagram.com/shahil_ggm?igsh=bDh2bG9hejY1Z2Iw" target="_blank" aria-label="Instagram">
+        <i class="fab fa-instagram"></i>
+        <span class="social-label">Instagram</span>
+    </a>
+    <a href="https://www.linkedin.com/in/shahil-jung-gautam-01471b293?utm_source=share_via&utm_content=profile&utm_medium=member_android" target="_blank" aria-label="LinkedIn">
+        <i class="fab fa-linkedin"></i>
+        <span class="social-label">LinkedIn</span>
+    </a>
+</div>
+
+
+</div>
+
+
+        <!-- RIGHT COLUMN (SKILLS) -->
+        <div class="resume-right">
+
+            <h4>Skills</h4>
+
+            <div class="skill">
+                <span class="skill-name">HTML & CSS</span>
+                <div class="bar"><div class="fill html"></div></div>
+                <small class="skill-level">Advanced</small>
+            </div>
+
+            <div class="skill">
+                <span class="skill-name">PHP</span>
+                <div class="bar"><div class="fill php"></div></div>
+                <small class="skill-level">Advanced</small>
+            </div>
+
+            <div class="skill">
+                <span class="skill-name">Database Management</span>
+                <div class="bar"><div class="fill db"></div></div>
+                <small class="skill-level">Intermediate</small>
+            </div>
+
+            <div class="skill">
+                <span class="skill-name">Canva (UI & Graphics)</span>
+                <div class="bar"><div class="fill canva"></div></div>
+                <small class="skill-level">Intermediate</small>
+            </div>
+
+        </div>
+
+        <!-- BOTTOM PROJECTS GRID (4 COLUMNS) -->
+        <div class="resume-projects">
+            <h4>Selected Projects</h4>
+
+            <div class="projects-grid">
+                <a href="https://techzenova.com" target="_blank" class="project-card">
+                    <h5>Zenova</h5>
+                    <p>Industry-level website development and UI implementation.</p>
+                </a>
+
+                <div class="project-card">
+                    <h5>Portfolio Website</h5>
+                    <p>Responsive personal portfolio using HTML & CSS.</p>
+                </div>
+
+                <div class="project-card">
+                    <h5>Student Result Portal</h5>
+                    <p>Academic system focused on structured data handling.</p>
+                </div>
+
+                <div class="project-card">
+                    <h5>College Website</h5>
+                    <p>Campus portal with resume, form, and map integration.</p>
+                </div>
+            </div>
+        </div>
+
+    </article>
+</section>
+
+<!-- ================= Registration Form ================= -->
+<section id="registration" class="section">
+    <h2>Student Registration</h2>
+    <p class="form-subtitle">Secure • Modern • Student-First Experience</p>
+
+    <form class="registration-form modern-form" action="#" method="POST" enctype="multipart/form-data">
+
+        <div class="form-grid">
+
+            <div class="form-group">
+                <label for="fullName">Full Name *</label>
+                <input type="text" id="fullName" name="fullName" placeholder="Enter your full name" required>
+            </div>
+
+            <div class="form-group">
+                <label for="dob">Date of Birth *</label>
+                <input type="date" id="dob" name="dob" required>
+            </div>
+
+            <div class="form-group">
+                <label for="gender">Gender</label>
+                <select id="gender" name="gender" required>
+                    <option value="">Select</option>
+                    <option>Male</option>
+                    <option>Female</option>
+                    <option>Other</option>
+                </select>
+            </div>
+
+            <div class="form-group">
+                <label for="email">Email *</label>
+                <input type="email" id="email" name="email" placeholder="example@email.com" required>
+            </div>
+
+            <div class="form-group">
+                <label for="phone">Phone *</label>
+                <input type="tel" id="phone" name="phone" placeholder="+977-98XXXXXXXX" pattern="[+0-9]{10,15}" required>
+            </div>
+
+            <div class="form-group">
+                <label for="address">Address</label>
+                <textarea id="address" name="address" rows="3" placeholder="Your current address"></textarea>
+            </div>
+
+            <div class="form-group">
+                <label for="course">Course</label>
+                <select id="course" name="course">
+                    <option value="BCA">BCA</option>
+                    <option value="BBS">BBS</option>
+                </select>
+            </div>
+
+            <div class="form-group">
+                <label for="semester">Semester</label>
+                <input type="number" id="semester" name="semester" min="1" max="8">
+            </div>
+
+            <div class="form-group">
+                <label for="year">Year</label>
+                <input type="number" id="year" name="year" min="1" max="4">
+            </div>
+
+            <div class="form-group full">
+                <label class="upload-box">
+                    Upload Documents
+                    <span>PDF / Image files accepted</span>
+                    <input type="file" name="documents" accept=".pdf,.jpg,.jpeg,.png">
+                </label>
+            </div>
+
+            <div class="form-group full checkbox">
+                <label>
+                    <input type="checkbox" name="agree" required>
+                    I agree to the terms and policies
+                </label>
+            </div>
+
+            <div class="form-group full">
+                <button type="submit">Register</button>
+            </div>
+
+        </div>
+
+    </form>
+</section>
+
+
+<!-- ================= Campus Map ================= -->
+<section id="map" class="section">
+    <h2>Campus Map</h2>
+    <p>Our campus includes Academic Blocks, Library,Computer Labs.</p>
+
+    <div class="map-container">
+        <iframe
+            title="Kathmandu Business Campus Location"
+            loading="lazy"
+            allowfullscreen
+            referrerpolicy="no-referrer-when-downgrade"
+            src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3532.397453260488!2d85.2998723!3d27.7379394!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x39eb192d68e5713d%3A0x6fb9834c735a5c86!2sKathmandu%20Business%20Campus%20(KBC)!5e0!3m2!1sen!2snp!4v1706000000000">
+        </iframe>
+    </div>
+    </div>
+</section>
+
+</main>
+
+<!-- ================= FOOTER ================= -->
+<footer id="footer">
+    <p>Kathmandu Business Campus, Nepal</p>
+    <p>
+        Email: <a href="mailto:info@kbcampus.edu.np">info@kbcampus.edu.np</a> |
+        Phone: <a href="tel:+9779843217125">+977-9843217125</a>
+    </p>
+
+    <div class="social">
+        <a href="https://www.facebook.com/share/17nzv4kYHi/" target="_blank" aria-label="Facebook">
+            <i class="fab fa-facebook"></i>
+        </a>
+        <a href="https://www.instagram.com/kathmandu_b_campus" target="_blank" aria-label="Instagram">
+            <i class="fab fa-instagram"></i>
+        </a>
+        <a href="https://www.linkedin.com/company/kathmandubusinesscampus/posts/?feedView=all" target="_blank" aria-label="LinkedIn">
+            <i class="fab fa-linkedin"></i>
+        </a>
+    </div>
+
+    <p>© 2026 Kathmandu Business Campus</p>
+</footer>
+
+</body>
+</html>
